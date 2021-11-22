@@ -5,7 +5,7 @@ const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const GLOBALS = {
-  'process.env.ENDPOINT': JSON.stringify(process.env.ENDPOINT || 'http://172.31.0.24:9000/api'),
+  'process.env.ENDPOINT': JSON.stringify(process.env.ENDPOINT || 'http://172.31.6.18:9000/api'),
 };
 
 module.exports = {

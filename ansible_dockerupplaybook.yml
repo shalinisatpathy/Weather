@@ -4,6 +4,11 @@
     connection: local 
     tasks:
 
+    - name: "installing docker-compose"
+      shell: "apt install docker-compose"
+      register: "output"
+
+
     - name: "executing docker compose"
       shell: "docker-compose up -d"
       register: "output"
