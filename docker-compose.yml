@@ -1,0 +1,14 @@
+version: "2.2"
+
+services:
+  frontend:
+    ports:
+      - 8000:8000
+    build:
+      context: ./frontend
+
+  backend:
+    ports:
+      - 9000:9000
+    build:
+      context: ./backend
