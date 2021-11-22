@@ -1,0 +1,12 @@
+---
+  - name: "pull down containers and images"
+    hosts: localhost
+    connection: local
+    tasks:
+
+    - name: "deleting and removing docker images "
+      shell: "docker-compose down --rmi local"
+      register: "output"
+
+    - debug: var=output.stdout_lines
+

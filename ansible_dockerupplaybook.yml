@@ -1,0 +1,11 @@
+---
+  - name: "Creating docker containers"
+    hosts: localhost
+    connection: local 
+    tasks:
+
+    - name: "executing docker compose"
+      shell: "docker-compose up -d"
+      register: "output"
+
+    - debug: var=output.stdout_lines
